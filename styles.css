@@ -6,9 +6,9 @@
 body{
     display:grid;
     grid-template-rows: 1fr 4fr 4fr 4fr 4fr;
-    /*background-color: black;*/
+    color: blanchedalmond;
     font:#ddd;
-    text-decoration: blanchedalmond;
+    background: #333 url(background_cover.jpg) top right/cover;
 }
 
 nav{
@@ -28,17 +28,61 @@ nav{
     display: flex;
     justify-content:space-between;
     flex: 1;
-    display: none;
 }
 
 a{
     text-decoration: none;
     font-size: larger;
+    color: #ddd;
 }
 
 .cover{
     justify-self: center;
     text-align: center;
-    background-image: url(https://hipwallpaper.com/view/SsRWfy);
+    align-self: center;
+}
+
+.aboutMe{
+    text-align: center;
+}
+
+.skills{
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 15px;
+}
+
+.projects{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.projectscontainer{
+    display: flex;
+    flex-direction: row;
+}
+footer{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media(max-width: 680px){
+    .navlist{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .name{
+        margin-bottom: 15px;
+    }
+
 
 }
