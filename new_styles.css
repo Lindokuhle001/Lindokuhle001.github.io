@@ -1,0 +1,267 @@
+:root {
+    --blue: #52c6f0;
+    --white:#fff ;
+    --grey:#3d3838;
+    --black:#111;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+h2 {
+    /*border-bottom: 3px solid var(--blue);*/
+    padding: 0rem;
+}
+
+p {
+    color: var(--blue);
+}
+
+.color_text {
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+body {
+    margin: 0rem;
+    padding: 0rem;
+    display: grid;
+    background: url(/texture-background_1404-59.jpg) top center/cover;
+}
+
+.wrapper {
+    height: 80vh;
+    background: url(/greyWood.jpg) center center/cover;
+    
+}
+
+.cover h1 {
+    text-align: left ;
+    color: var(--white);
+}
+.cover h1 #hello{
+    font-size: 1.3rem;
+
+}
+
+.cover h1 #my_name {
+    margin-left: 80px;
+    color:var(--blue);
+}
+
+.cover h1 #web_developer {
+    font-size: 1.3rem;
+    margin-left: 230px;
+}
+
+/* the navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.brand_title {
+    font-size: 1.3rem;
+    margin: 0.5rem;
+
+}
+
+.navbar_links ul{
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+}
+
+.navbar_links ul li {
+    list-style: none;
+}
+
+.navbar_links li a {
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar_links li:hover {
+    background-color: #555;
+}
+
+.toggle_btn {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle_btn .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+
+.toggle_btn {
+    display: none;
+}
+
+/*the about me section*/
+.about_me  {
+
+    margin: 50px 10px;
+    background-color:#000000a6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about_me div i {
+    font-size: 150px;
+}
+
+.about_me div{
+    text-align: center;
+}
+
+.about_me .fab {
+    font-size: 20rem;
+}
+
+/* skills&*/
+
+.skills {
+    background-color: #00000069;
+}
+
+.skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 2rem;
+    text-align: center;
+}
+
+.skills h2 {
+    text-align: center;
+}
+.skills ul li i {
+    font-size: 2.2rem;
+}
+
+/* My Work*/
+
+.projects {
+    margin: 50px 20px;
+    background-color:rgba(0, 0, 0, 0.544); 
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.projects .projects_container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.projects .projects_container .project a i {
+    font-size: 2rem;
+}
+
+.project {
+    margin: 10px;
+    border: 3px solid black;
+}
+
+/*footer*/
+
+#footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#footer .socials i {
+    font-size: 2rem;
+
+}
+
+#footer .socials {
+    text-align: center;    
+}
+#message {
+    text-align: center;
+    margin: auto;
+    justify-self: center;
+    align-self: center;
+    
+}
+/*media queries*/
+@media (max-width: 600px) {
+
+    .cover h1 #my_name{
+        margin: 0;
+    }
+
+    .cover h1 #web_developer {
+        margin: 0;
+    }
+
+    .cover h1 #hello {
+        margin: 0;
+    }
+
+    /* navbar media queries*/
+    .toggle_btn {
+        display: flex;
+    }
+
+    .navbar_links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar.on {
+        background-color: #555;
+    }
+
+    .navbar_links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar_links li {
+        text-align: center;
+    }
+
+    .navbar_links li a {
+        padding: 0.5rem;
+    }
+
+    .navbar_links.active {
+        display: flex;
+    }
+
+
+
+    /*the about me section media queries*/
+    .about_me {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
