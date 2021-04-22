@@ -68,11 +68,6 @@ body {
     color: var(--white);
 }
 
-.brand_title {
-    font-size: 1.3rem;
-    margin: 0.5rem;
-
-}
 
 .navbar_links ul{
     margin: 0rem;
@@ -139,43 +134,45 @@ body {
 
 /* skills&*/
 
-.skills {
+#skills {
     background-color: #00000069;
 }
 
-.skills ul {
+#skills ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 2rem;
     text-align: center;
+    justify-self: start;
+    align-self: start;
 }
 
-.skills h2 {
+#skills h2 {
     text-align: center;
 }
-.skills ul li i {
+#skills ul li i {
     font-size: 2.2rem;
 }
 
 /* My Work*/
 
-.projects {
+#projects {
     margin: 50px 20px;
     background-color:rgba(0, 0, 0, 0.544); 
 }
 
-.projects h2 {
+#projects h2 {
     text-align: center;
 }
 
-.projects .projects_container {
+#projects .projects_container {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.projects .projects_container .project a i {
+#projects .projects_container .project a i {
     font-size: 2rem;
 }
 
