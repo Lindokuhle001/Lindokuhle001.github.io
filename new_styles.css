@@ -113,7 +113,7 @@ body {
 }
 
 /*the about me section*/
-.about_me {
+#about_me {
   margin: 50px 10px;
   background-color: #00000000;
   background: url(/greyWood.jpg) center center/cover;
@@ -121,28 +121,28 @@ body {
     grid-template-columns: 1fr 1fr;*/
 }
 
-.about_me div i {
+#about_me div i {
   font-size: 150px;
   display: none;
 }
 
-.about_me div {
+#about_me div {
   text-align: center;
 }
 
-.about_me .text_box {
+#about_me .text_box {
   font-size: 2rem;
 }
 
-.about_me .text_box {
+#about_me .text_box {
   color: var(--black);
 }
 
-.about_me .text_box p {
+#about_me .text_box p {
   color: var(--black);
 }
 
-.about_me .text_box h2 {
+#about_me .text_box h2 {
   font-size: 2rem;
 }
 
@@ -301,7 +301,7 @@ body {
   }
 
   /*the about me section media queries*/
-  .about_me {
+  #about_me {
     display: grid;
     grid-template-columns: 1fr;
   }
