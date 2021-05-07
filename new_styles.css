@@ -41,8 +41,8 @@ body {
 }
 
 .cover h1 {
-  margin-left: 50px;
-  margin-top: 90px;
+  margin-left: 10px;
+  margin-top: 20px;
   text-align: left;
   color: var(--white);
 }
@@ -51,14 +51,14 @@ body {
 }
 
 .cover h1 #my_name {
-  margin-left: 130px;
+  margin-left: 60px;
   color: var(--blue);
   font-size: 3rem;
 }
 
 .cover h1 #web_developer {
   font-size: 2rem;
-  margin-left: 360px;
+  margin-left: 120px;
 }
 
 /* the navbar*/
