@@ -2,7 +2,7 @@
   --blue: #52c6f0;
   --white: #fff;
   --grey: #3d3838;
-  --black: #fff;
+  --black: #111;
 }
 
 * {
@@ -10,7 +10,7 @@
 }
 
 a {
-  color: var(--blue);
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -20,31 +20,32 @@ h2 {
 }
 
 p {
-  color: var(--blue);
+  color: var(--black);
 }
 
 .color_text {
-  color: var(--blue);
+  color: var(--black);
   font-size: 2rem;
 }
 
 body {
   margin: 0rem;
   padding: 0rem;
-  display: grid;
-  background: url(/texture-background_1404-59.jpg) top center/cover;
+  display: flex;
+  flex-direction: column;
+  /*background: url(/texture-background_1404-59.jpg) top center/cover;*/
 }
 
-.wrapper {
+/*.wrapper {
   height: 100vh;
   background: url(/greyWood.jpg) center center/cover;
-}
+}*/
 
 .cover h1 {
   margin-left: 10px;
   margin-top: 20px;
   text-align: left;
-  color: var(--white);
+  color: var(--black);
 }
 .cover h1 #hello {
   font-size: 2rem;
@@ -52,7 +53,7 @@ body {
 
 .cover h1 #my_name {
   margin-left: 60px;
-  color: var(--blue);
+  color: var(--black);
   font-size: 3rem;
 }
 
@@ -66,7 +67,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: left;
-  color: var(--white);
+  color: var(--blue);
 }
 
 .navbar_links ul {
@@ -104,7 +105,7 @@ body {
 .toggle_btn .bar {
   width: 100%;
   height: 3px;
-  background-color: var(--blue);
+  background-color: var(--black);
   border-radius: 10px;
 }
 
@@ -116,8 +117,8 @@ body {
 #about_me {
   margin: 50px 10px;
   background-color: #00000000;
-  background: url(/greyWood.jpg) center center/cover;
-  /*display: grid;
+   /*background: url(/greyWood.jpg) center center/cover;
+ display: grid;
     grid-template-columns: 1fr 1fr;*/
 }
 
@@ -148,46 +149,41 @@ body {
 
 /* skills&*/
 
-#skills {
-  background: #000000e1 url(/greyWood.jpg) center center/cover;
-}
-
 #skills ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2rem;
   text-align: center;
-  justify-self: start;
-  align-self: start;
+  place-self: center;
 }
 
 #skills h2 {
   text-align: center;
   font-size: 2rem;
-  color: var(--white);
+  color: var(--black);
 }
 #skills ul li i {
   font-size: 8rem;
-  color: var(--blue);
+  color: var(--black);
 }
 
 #skills ul li {
+  grid: inherit;
   font-size: 1.5rem;
-  color: var(--white);
+  color: var(--black);
+  margin-right: 39px;
 }
 
 /* My Work*/
 
 #projects {
-  margin: 50px 20px;
-  background-color: rgba(0, 0, 0, 0.544);
-  background: url(/greyWood.jpg) center center/cover;
+  margin: 50px 20px;  
 }
 
 #projects h2 {
   text-align: center;
-  color: var(--white);
+  color: var(--black);
 }
 
 #projects .projects_container {
@@ -201,8 +197,8 @@ body {
 }
 
 #projects .projects_container .project a {
-  font-size: 2rem;
-  color: var(--white);
+  font-size: 1.5rem;
+  color: var(--black);
 }
 
 .project {
@@ -215,8 +211,7 @@ body {
   /*display: grid;
     grid-template-columns: repeat(2, 1fr);
     background: url(/greyWood.jpg) center center/cover;*/
-  color: var(--white);
-  background: url(/greyWood.jpg) center center/cover;
+  color: var(--black);
   font-weight: bold;
 }
 #footer .socials i {
@@ -226,7 +221,7 @@ body {
 
 #footer .socials {
   text-align: center;
-  color: var(--white);
+  color: var(--black);
 }
 
 #footer .socials .contactMe {
@@ -237,7 +232,7 @@ body {
 
 #footer .socials .contactMe p {
   font-size: 1.5rem;
-  color: var(--white);
+  color: var(--black);
 }
 
 .message {
