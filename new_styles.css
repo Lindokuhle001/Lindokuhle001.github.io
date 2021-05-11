@@ -1,8 +1,9 @@
 :root {
-  --blue: #52c6f0;
+  --blue: #081652;
   --white: #fff;
-  --grey: #3d3838;
-  --black: #111;
+  --grey: #59a5d8;
+  --black: #0a1128;
+  --green: #0361786b;
 }
 
 * {
@@ -10,7 +11,7 @@
 }
 
 a {
-  color: var(--black);
+  color: var(--blue);
   text-decoration: none;
 }
 
@@ -36,10 +37,10 @@ body {
   /*background: url(/texture-background_1404-59.jpg) top center/cover;*/
 }
 
-/*.wrapper {
-  height: 100vh;
-  background: url(/greyWood.jpg) center center/cover;
-}*/
+.wrapper {
+background-color:var(--green) ;
+color: white;
+}
 
 .cover h1 {
   margin-left: 10px;
@@ -88,7 +89,7 @@ body {
 }
 
 .navbar_links li:hover {
-  background-color: #555;
+  background-color: var(--grey);
 }
 
 .toggle_btn {
@@ -275,7 +276,7 @@ body {
   }
 
   .navbar.on {
-    background-color: #555;
+    background-color:var(--grey);
   }
 
   .navbar_links ul {
