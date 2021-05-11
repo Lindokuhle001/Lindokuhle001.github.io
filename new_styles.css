@@ -4,6 +4,7 @@
   --grey: #59a5d8;
   --black: #0a1128;
   --green: #0361786b;
+  --red:rgba(218, 237, 252, 0.664);
 }
 
 * {
@@ -18,6 +19,7 @@ a {
 h2 {
   /*border-bottom: 3px solid var(--blue);*/
   padding: 0rem;
+  color: #6C63FF;
 }
 
 p {
@@ -34,11 +36,10 @@ body {
   padding: 0rem;
   display: flex;
   flex-direction: column;
-  /*background: url(/texture-background_1404-59.jpg) top center/cover;*/
 }
 
 .wrapper {
-background-color:var(--green) ;
+background-color:var(--red) ;
 color: white;
 }
 
@@ -48,13 +49,18 @@ color: white;
   text-align: left;
   color: var(--black);
 }
+
+.cover img {
+  width:50%;
+  margin-left: 50%;
+}
 .cover h1 #hello {
   font-size: 2rem;
 }
 
 .cover h1 #my_name {
   margin-left: 60px;
-  color: var(--black);
+  color: #6C63FF;
   font-size: 3rem;
 }
 
@@ -117,7 +123,6 @@ color: white;
 /*the about me section*/
 #about_me {
   margin: 50px 10px;
-  background-color: #00000000;
    /*background: url(/greyWood.jpg) center center/cover;
  display: grid;
     grid-template-columns: 1fr 1fr;*/
@@ -133,7 +138,7 @@ color: white;
 }
 
 #about_me .text_box {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 #about_me .text_box {
@@ -171,7 +176,7 @@ color: white;
 
 #skills ul li {
   grid: inherit;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--black);
   margin-right: 39px;
 }
@@ -211,9 +216,10 @@ color: white;
 #footer {
   /*display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background: url(/greyWood.jpg) center center/cover;*/
-  color: var(--black);
+    background: url(/greyWood.jpg) center center/cover;
+  color: var(--black);*/
   font-weight: bold;
+  background-color:var(--red)
 }
 #footer .socials i {
   font-size: 4rem;
@@ -232,7 +238,7 @@ color: white;
 }
 
 #footer .socials .contactMe p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--black);
 }
 
@@ -243,6 +249,17 @@ color: white;
   justify-self: center;
   align-self: center;
 }
+
+i {
+ color: #6C63FF;
+}
+
+h2 {
+  /*border-bottom: 3px solid var(--blue);*/
+  padding: 0rem;
+  color: #6C63FF;
+}
+
 /*media queries*/
 @media (max-width: 680px) {
   .cover h1 #my_name {
