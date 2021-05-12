@@ -19,7 +19,7 @@ a {
 h2 {
   /*border-bottom: 3px solid var(--blue);*/
   padding: 0rem;
-  color: #6C63FF;
+ 
 }
 
 p {
@@ -155,6 +155,10 @@ color: white;
 
 /* skills&*/
 
+#skills {
+  background-color:var(--red) ;
+}
+
 #skills ul {
   list-style: none;
   display: grid;
@@ -189,7 +193,7 @@ color: white;
 
 #projects h2 {
   text-align: center;
-  color: var(--black);
+  color:black;
 }
 
 #projects .projects_container {
@@ -200,6 +204,9 @@ color: white;
 
 #projects .projects_container .project a i {
   font-size: 11rem;
+  background-color: var(--red);
+  border-radius: 50%;
+  
 }
 
 #projects .projects_container .project a {
@@ -222,8 +229,12 @@ color: white;
   background-color:var(--red)
 }
 #footer .socials i {
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: var(--black);
+}
+
+#footer .socials a {
+  color:#6C63FF ;
 }
 
 #footer .socials {
@@ -250,14 +261,10 @@ color: white;
   align-self: center;
 }
 
-i {
- color: #6C63FF;
-}
-
-h2 {
+#footer .socials h2 {
   /*border-bottom: 3px solid var(--blue);*/
   padding: 0rem;
-  color: #6C63FF;
+  color: #000000;
 }
 
 /*media queries*/
@@ -292,9 +299,7 @@ h2 {
     align-items: flex-start;
   }
 
-  .navbar.on {
-    background-color:var(--grey);
-  }
+
 
   .navbar_links ul {
     width: 100%;
