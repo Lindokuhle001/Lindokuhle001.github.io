@@ -245,13 +245,26 @@ color: white;
 
 #footer .socials .contactMe {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   
 }
 
 #footer .socials .contactMe p {
   font-size: 1.3rem;
+  font: bold;
   color: var(--black);
+}
+
+#footer .socials .contactMe button {
+  background-color: var(--black);
+  color:transparent ;
+  font-size: 1rem;
+  font: bold;
+  height:2rem ;
+  width: auto;
+  margin-top: 23px;
+  border-radius: 28px ;
+  border: none;
 }
 
 .message {
