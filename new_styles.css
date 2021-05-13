@@ -195,6 +195,7 @@ color: white;
   text-align: center;
   color:black;
   font-size: 2rem;
+  font: bold;
 }
 
 #projects .projects_container {
