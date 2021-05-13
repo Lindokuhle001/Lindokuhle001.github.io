@@ -194,6 +194,7 @@ color: white;
 #projects h2 {
   text-align: center;
   color:black;
+  font-size: 2rem;
 }
 
 #projects .projects_container {
@@ -245,7 +246,7 @@ color: white;
 #footer .socials .contactMe {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  
 }
 
 #footer .socials .contactMe p {
@@ -264,6 +265,7 @@ color: white;
 #footer .socials h2 {
   /*border-bottom: 3px solid var(--blue);*/
   padding: 0rem;
+  font-size: 2rem;
   color: #000000;
 }
 
