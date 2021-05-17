@@ -242,6 +242,8 @@ color: white;
 #footer .socials {
   text-align: center;
   color: var(--black);
+  color:var(--grey) ;
+
 }
 
 #footer .socials .contactMe {
@@ -258,7 +260,6 @@ color: white;
 
 #footer .socials .contactMe button {
   background-color: var(--black);
-  color:transparent ;
   font-size: 1rem;
   font: bold;
   height:2rem ;
