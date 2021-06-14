@@ -1,0 +1,342 @@
+:root {
+  --blue: #081652;
+  --white: #fff;
+  --grey: #59a5d8;
+  --black: #0a1128;
+  --green: #0361786b;
+  --red:rgba(218, 237, 252, 0.664);
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+h2 {
+  /*border-bottom: 3px solid var(--blue);*/
+  padding: 0rem;
+ 
+}
+
+p {
+  color: var(--black);
+}
+
+.color_text {
+  color: var(--black);
+  font-size: 2rem;
+}
+
+body {
+  margin: 0rem;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+background-color:var(--red) ;
+color: white;
+}
+
+.cover h1 {
+  margin-left: 10px;
+  margin-top: 20px;
+  text-align: left;
+  color: var(--black);
+}
+
+.cover img {
+  width:50%;
+  margin-left: 50%;
+}
+.cover h1 #hello {
+  font-size: 2rem;
+}
+
+.cover h1 #my_name {
+  margin-left: 60px;
+  color: #6C63FF;
+  font-size: 3rem;
+}
+
+.cover h1 #web_developer {
+  font-size: 2rem;
+  margin-left: 120px;
+}
+
+/* the navbar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  color: var(--blue);
+}
+
+.navbar_links ul {
+  margin: 0rem;
+  padding: 0rem;
+  display: flex;
+}
+
+.navbar_links ul li {
+  list-style: none;
+}
+
+.navbar_links li a {
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  font-size: 2rem;
+}
+
+.navbar_links li:hover {
+  background-color: var(--grey);
+}
+
+.toggle_btn {
+  position: fixed;
+  top: 0.75rem;
+  right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle_btn .bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--black);
+  border-radius: 10px;
+}
+
+.toggle_btn {
+  display: none;
+}
+
+/*the about me section*/
+#about_me {
+  margin: 50px 10px;
+   /*background: url(/greyWood.jpg) center center/cover;
+ display: grid;
+    grid-template-columns: 1fr 1fr;*/
+}
+
+#about_me div i {
+  font-size: 150px;
+  display: none;
+}
+
+#about_me div {
+  text-align: center;
+}
+
+#about_me .text_box {
+  font-size: 1.5rem;
+}
+
+#about_me .text_box {
+  color: var(--black);
+}
+
+#about_me .text_box p {
+  color: var(--black);
+}
+
+#about_me .text_box h2 {
+  font-size: 2rem;
+}
+
+/* skills&*/
+
+#skills {
+  background-color:var(--red) ;
+}
+
+#skills ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  text-align: center;
+  place-self: center;
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--black);
+}
+#skills ul li i {
+  font-size: 8rem;
+  color: var(--black);
+}
+
+#skills ul li {
+  grid: inherit;
+  font-size: 1.5rem;
+  color: var(--black);
+  margin-right: 39px;
+}
+
+/* My Work*/
+
+#projects {
+  margin: 50px 20px;  
+}
+
+#projects h2 {
+  text-align: center;
+  color:black;
+  font-size: 2rem;
+  font: bold;
+}
+
+#projects .projects_container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#projects .projects_container .project a i {
+  font-size: 11rem;
+  background-color: var(--red);
+  border-radius: 50%;
+  
+}
+
+#projects .projects_container .project a {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.project {
+  margin: 10px;
+}
+
+/*footer*/
+
+#footer {
+  /*display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: url(/greyWood.jpg) center center/cover;
+  color: var(--black);*/
+  font-weight: bold;
+  background-color:var(--red)
+}
+#footer .socials i {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+#footer .socials a {
+  color:#6C63FF ;
+}
+
+#footer .socials {
+  text-align: center;
+  color: var(--black);
+  color:var(--grey) ;
+
+}
+
+/* #footer .socials .contactMe {
+  display: flex;
+  justify-content: space-around;
+  
+} */
+
+#footer .socials .contactMe p {
+  font-size: 1.3rem;
+  font: bold;
+  color: var(--black);
+}
+
+#footer .socials .contactMe button {
+  background-color: var(--black);
+  font-size: 1rem;
+  font: bold;
+  height:2rem ;
+  width: 75px;
+  border-radius: 28px ;
+  border: none;
+}
+
+.message {
+  display: none;
+  text-align: center;
+  margin: auto;
+  justify-self: center;
+  align-self: center;
+}
+
+#footer .socials h2 {
+  /*border-bottom: 3px solid var(--blue);*/
+  padding: 0rem;
+  font-size: 2rem;
+  color: #000000;
+}
+
+/*media queries*/
+@media (max-width: 680px) {
+  .cover h1 #my_name {
+    margin: 0;
+  }
+
+  .cover h1 #web_developer {
+    margin: 0;
+  }
+
+  .cover h1 #hello {
+    margin: 0;
+  }
+
+  /* navbar media queries*/
+  .toggle_btn {
+    display: flex;
+    position: fixed;
+    top: 0.75rem;
+    right: 5px;
+  }
+
+  .navbar_links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+
+  .navbar_links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar_links li {
+    text-align: center;
+  }
+
+  .navbar_links li a {
+    padding: 0.5rem;
+  }
+
+  .navbar_links.active {
+    display: flex;
+  }
+
+  /*the about me section media queries*/
+  #about_me {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
