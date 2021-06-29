@@ -41,6 +41,7 @@ body {
 .wrapper {
 background-color:var(--red) ;
 color: white;
+margin-top: 60px;
 }
 
 .cover h1 {
@@ -71,6 +72,10 @@ color: white;
 
 /* the navbar*/
 .navbar {
+  position: fixed;
+  width: 100vw;
+  margin-bottom: 60px;
+  background-color: var(--red);
   display: flex;
   justify-content: space-between;
   align-items: left;
