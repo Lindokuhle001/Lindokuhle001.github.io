@@ -3,6 +3,7 @@
 :root{
     --blue: #59a5d8;
     --white: #fff;
+    --backgroundOp:rgba(0, 0, 0, 0.5);
 }
 
 *{
@@ -38,12 +39,13 @@ html{
 
 /* all similar content styling codes */
 section{
-    padding: 100px 0;
+    padding: 50px 0;
 }
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
-    margin: auto;
+    margin: 0;
+    /* border-bottom: 1px solid var(--blue); */
 }
 .about, .services, .skills, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -65,8 +67,9 @@ section .title{
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
+    color: var(--blue);
 }
-section .title::before{
+/* section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -85,7 +88,7 @@ section .title::after{
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
-}
+} */
 
 /* navbar styling */
 .navbar{
@@ -182,6 +185,7 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    padding-top: 120px;
 }
 .home .max-width{
   width: 100%;
@@ -224,6 +228,9 @@ section .title::after{
 }
 
 /* about section styling */
+.about {
+    background-color: var(--backgroundOp);
+}
 .about .title{
     color:var(--blue)
 }
@@ -282,6 +289,9 @@ section .title::after{
     background: #111;
     content: "what i provide"; 
 }*/
+.services{
+    background-color: var(--backgroundOp);
+}
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
@@ -316,9 +326,9 @@ section .title::after{
 
 /* skills section styling */
 
-.skills .title::after{
+/* .skills .title::after{
     content: "what i know";
-}
+} */
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
@@ -453,9 +463,9 @@ section .title::after{
 }
 
 /* contact section styling */
-.contact .title::after{
+/* .contact .title::after{
     content: "get in touch";
-}
+} */
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -463,9 +473,11 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: var(--white);
 }
 .contact .contact-content .left p{
     text-align: justify;
+    color: var(--white);
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -484,9 +496,12 @@ section .title::after{
 }
 .contact .contact-content .info .head{
     font-weight: 500;
+    color: var(--white);
+    
 }
-.contact .contact-content .info .sub-title{
-    color: #333;
+.contact .contact-content .info .sub-title, a{
+    text-decoration: none;
+    color: var(--blue);
 }
 .contact .right form .fields{
     display: flex;
