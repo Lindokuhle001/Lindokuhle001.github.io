@@ -3,7 +3,7 @@
 :root{
     --blue: #59a5d8;
     --white: #fff;
-    --backgroundOp:rgba(0, 0, 0, 0.5);
+    --backgroundOp:rgba(0, 0, 0, 0.7);
 }
 
 *{
@@ -178,14 +178,14 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("../images/greyWood.jpg") no-repeat center;
+    /* background: url("../images/greyWood.jpg") no-repeat center; */
     height: 100vh;
     color: #fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-    padding-top: 120px;
+    padding-top: 160px;
 }
 .home .max-width{
   width: 100%;
@@ -310,7 +310,8 @@ section .title::after{
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.services .serv-content .card i a{
+    text-decoration: none;
     font-size: 50px;
     color: var(--blue);
     transition: color 0.3s ease;
@@ -326,9 +327,39 @@ section .title::after{
 
 /* skills section styling */
 
+.skills{
+    color: var(--white);
+    background-color: var(--backgroundOp);
+}
+#skills ul {
+    width: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(110px, 1fr));
+    grid-gap: 1rem;
+    text-align: center;
+    place-self: center;
+  }
+  
+  #skills h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--blue);
+  }
+  #skills ul li i {
+    font-size: 4rem;
+    color: var(--black);
+  }
+  
+  #skills ul li {
+    grid: inherit;
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-right: 39px;
+  }
 /* .skills .title::after{
     content: "what i know";
-} */
+} 
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
@@ -397,10 +428,10 @@ section .title::after{
 }
 .skills-content .right .mysql::before{
     width: 70%;
-}
+}*/
 
 /* teams section styling */
-.teams .title::after{
+/* .teams .title::after{
     content: "who with me";
 }
 .teams .carousel .card{
@@ -460,7 +491,7 @@ section .title::after{
 .owl-dot.active,
 .owl-dot:hover{
     background: var(--blue)!important;
-}
+} */
 
 /* contact section styling */
 /* .contact .title::after{
@@ -468,6 +499,7 @@ section .title::after{
 } */
 .contact .contact-content .column{
     width: calc(50% - 30px);
+    background-color: var(--backgroundOp);
 }
 .contact .contact-content .text{
     font-size: 20px;
@@ -566,15 +598,18 @@ section .title::after{
 footer{
     background: #111;
     padding: 15px 23px;
-    color: #fff;
+    color: var(--blue);
     text-align: center;
 }
-footer span a{
-    color: var(--blue);
+footer ul, a{
+    list-style: none;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
-footer span a:hover{
-    text-decoration: underline;
+footer  a{
+    margin:1rem;
 }
 
 
