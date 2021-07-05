@@ -14,7 +14,7 @@
 }
 
 body {
-    background: url("../images/greyWood.jpg") no-repeat center;
+    background: url("../images/greyWood.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -310,7 +310,7 @@ section .title::after{
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i a{
+.services .serv-content .card a i{
     text-decoration: none;
     font-size: 50px;
     color: var(--blue);
@@ -348,7 +348,7 @@ section .title::after{
   }
   #skills ul li i {
     font-size: 4rem;
-    color: var(--black);
+    color: var(--blue);
   }
   
   #skills ul li {
