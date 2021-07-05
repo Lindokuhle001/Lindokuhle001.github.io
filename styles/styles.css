@@ -17,6 +17,7 @@ body {
     background: url("../images/greyWood.jpg");
     background-size: cover;
     background-attachment: fixed;
+    background-position: top left;
 }
 html{
     scroll-behavior: smooth;
@@ -46,6 +47,7 @@ section{
     padding: 0 80px;
     margin: 0;
     /* border-bottom: 1px solid var(--blue); */
+    overflow: hidden;
 }
 .about, .services, .skills, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -186,6 +188,7 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
     padding-top: 160px;
+    overflow: hidden;
 }
 .home .max-width{
   width: 100%;
@@ -230,6 +233,7 @@ section .title::after{
 /* about section styling */
 .about {
     background-color: var(--backgroundOp);
+    overflow: hidden;
 }
 .about .title{
     color:var(--blue)
@@ -291,6 +295,7 @@ section .title::after{
 }*/
 .services{
     background-color: var(--backgroundOp);
+    overflow: hidden;
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -330,6 +335,7 @@ section .title::after{
 .skills{
     color: var(--white);
     background-color: var(--backgroundOp);
+    overflow: hidden;
 }
 #skills ul {
     width: 100%;
@@ -497,6 +503,9 @@ section .title::after{
 /* .contact .title::after{
     content: "get in touch";
 } */
+.contact{
+    overflow: hidden;
+}
 .contact .contact-content .column{
     width: calc(50% - 30px);
     background-color: var(--backgroundOp);
@@ -600,6 +609,7 @@ footer{
     padding: 15px 23px;
     color: var(--blue);
     text-align: center;
+    overflow: hidden;
 }
 footer ul, a{
     list-style: none;

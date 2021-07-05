@@ -45,7 +45,7 @@ $(document).ready(function(){
         strings: ["Web Developer"],
         typeSpeed: 100,
         backSpeed: 60,
-        loop: false
+        loop: true
     });
 
     // owl carousel script
