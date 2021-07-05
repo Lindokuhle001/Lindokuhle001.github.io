@@ -722,7 +722,7 @@ footer ul, a{
 
 @media (max-width: 500px) {
     body{
-        background: url("../images/greyWood.jpg");
+        background: url("../images/greyWood.jpg") repeat;
         background-size: cover;
         background-attachment: fixed;
         background-position: top left;
