@@ -608,8 +608,9 @@ footer ul, a{
     justify-content: center;
     align-content: center;
 }
-footer  a{
-    margin:1rem;
+.socials li a i{
+    margin: 1rem;
+    font-size: 1.5rem;
 }
 
 
