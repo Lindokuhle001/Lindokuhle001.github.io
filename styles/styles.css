@@ -308,6 +308,11 @@ section .title::after{
 }
 .services .serv-content .card:hover{
     background: var(--blue);
+    color: #fff;
+}
+
+.services .serv-content .card:hover a{
+    color: #fff;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
