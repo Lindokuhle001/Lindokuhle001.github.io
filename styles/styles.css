@@ -46,7 +46,6 @@ section{
     max-width: 1300px;
     padding: 0 80px;
     margin: 0;
-    /* border-bottom: 1px solid var(--blue); */
     overflow: hidden;
 }
 .about, .services, .skills, .contact, footer{
@@ -71,26 +70,7 @@ section .title{
     font-family: 'Ubuntu', sans-serif;
     color: var(--blue);
 }
-/* section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
-}
-section .title::after{
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 20px;
-    color: var(--blue);
-    padding: 0 5px;
-    background: #fff;
-    transform: translateX(-50%);
-} */
+
 
 /* navbar styling */
 .navbar{
@@ -180,7 +160,6 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    /* background: url("../images/greyWood.jpg") no-repeat center; */
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -234,6 +213,7 @@ section .title::after{
 .about {
     background-color: var(--backgroundOp);
     overflow: hidden;
+    font-size: 18px;
 }
 .about .title{
     color:var(--blue)
@@ -279,23 +259,19 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
+/* Projects section styling */
 .services, .teams{
     color:#fff;
     background: #111;
 }
-/* .services .title::before,
-.teams .title::before{
-    background: #fff;
-}
-.services .title::after,
-.teams .title::after{
-    background: #111;
-    content: "what i provide"; 
-}*/
+
 .services{
     background-color: var(--backgroundOp);
     overflow: hidden;
+    font-size: 18px;
+}
+.services .serv-content {
+    justify-content: space-around;
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -364,156 +340,21 @@ section .title::after{
   
   #skills ul li {
     grid: inherit;
-    font-size: 1.5rem;
+    font-size: 18px;
     color: var(--black);
     margin-right: 39px;
   }
-/* .skills .title::after{
-    content: "what i know";
-} 
-.skills .skills-content .column{
-    width: calc(50% - 30px);
-}
-.skills .skills-content .left .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.skills .skills-content .left p{
-    text-align: justify;
-}
-.skills .skills-content .left a{
-    display: inline-block;
-    background: var(--blue);
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid var(--blue);
-    transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover{
-    color: var(--blue);
-    background: none;
-}
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: var(--blue);
-}
-.skills-content .right .html::before{
-    width: 90%;
-}
-.skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
-    width: 80%;
-}
-.skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
-    width: 70%;
-}*/
-
-/* teams section styling */
-/* .teams .title::after{
-    content: "who with me";
-}
-.teams .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover{
-    background: var(--blue);
-}
-.teams .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.teams .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid var(--blue);
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid var(--blue)!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: var(--blue)!important;
-} */
 
 /* contact section styling */
-/* .contact .title::after{
-    content: "get in touch";
-} */
+
 .contact{
     overflow: hidden;
+    font-size: 18px;
+    background-color: var(--backgroundOp);
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
-    background-color: var(--backgroundOp);
+
 }
 .contact .contact-content .text{
     font-size: 20px;
@@ -615,6 +456,7 @@ footer{
     color: var(--blue);
     text-align: center;
     overflow: hidden;
+    width: 100%;
 }
 footer ul, a{
     list-style: none;
@@ -622,10 +464,11 @@ footer ul, a{
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-direction: row;
 }
 .socials li a i{
     margin: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 
